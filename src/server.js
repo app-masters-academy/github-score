@@ -36,7 +36,6 @@ async function getReposFromUser(username) {
 app.get("/:username", async (request, response) => {
   const username = request.params.username;
 
-  console.log(getReposFromUser(username));
   return response.json(await getReposFromUser(username));
 });
 
