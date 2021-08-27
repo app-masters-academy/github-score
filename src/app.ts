@@ -19,6 +19,7 @@ app.get('/:username', async (req: Request, res: Response): Promise<void> => {
             username: username,
         })
 
+        let totalScore = 0
         const scores = data.map((elem) => {
             const repoName = elem.name
             const score =
@@ -29,10 +30,11 @@ app.get('/:username', async (req: Request, res: Response): Promise<void> => {
                 name: repoName,
                 score: score,
             }
+            totalScore += score
             return repo
         })
 
-        res.json({ repos: scores })
+        res.json({ repos: scores, totalScore: totalScore / scores.length })
     } catch (err) {
         res.json({ error: 'error' })
     }
