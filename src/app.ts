@@ -20,14 +20,18 @@ app.get('/:username', async (req: Request, res: Response): Promise<void> => {
         })
 
         const scores = data.map((elem) => {
+            const repoName = elem.name
             const score =
                 (elem.stargazers_count || 1) *
                 (elem.forks + elem.watchers_count - elem.open_issues)
-
-            return score
+            const repo = {
+                name: repoName,
+                score: score,
+            }
+            return repo
         })
 
-        res.json(scores)
+        res.json({ repos: scores })
     } catch (err) {
         res.json({ error: 'error' })
     }
