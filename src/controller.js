@@ -28,14 +28,7 @@ module.exports = {
         console.log(json)
         res.send(json)
     })
-        /*
 
-    JSON.parse(user)
-    //const repos = user.data
-    let score
-    score = user.data[0].stargazers_count
-    let score = 0
-    */
     res.send(user)
 
     }
