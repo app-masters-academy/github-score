@@ -11,8 +11,8 @@ Referências:
 
 # Etapas
 
-- [ ] Ler documentação "por alto"
-- [ ] Obter repositórios de um usuário via octokit
+- [%] Ler documentação "por alto"
+- [x] Obter repositórios de um usuário via octokit
 - [ ] Criar uma rota rest que receba um usuário via parametro
 - [ ] Calcular pontuação
 - [ ] Retornar pontuação
