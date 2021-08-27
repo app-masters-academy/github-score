@@ -23,7 +23,8 @@ app.get('/:username', async (req: Request, res: Response): Promise<void> => {
             const repoName = elem.name
             const score =
                 (elem.stargazers_count || 1) *
-                (elem.forks + elem.watchers_count - elem.open_issues)
+                (elem.forks + elem.watchers_count - elem.open_issues) *
+                10
             const repo = {
                 name: repoName,
                 score: score,
