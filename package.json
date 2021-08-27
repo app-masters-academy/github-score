@@ -1,0 +1,23 @@
+{
+  "name": "github-score",
+  "version": "1.0.0",
+  "description": "O objetivo deste projeto é implementarmos um backend que receba um nickname do github, e retorne uma \"nota\" daquele usuário.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ariamb/github-score.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ariamb/github-score/issues"
+  },
+  "homepage": "https://github.com/Ariamb/github-score#readme",
+  "dependencies": {
+    "@octokit/rest": "^18.9.1",
+    "express": "^4.17.1"
+  }
+}
