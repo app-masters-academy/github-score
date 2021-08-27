@@ -1,0 +1,15 @@
+{
+  "name": "github-score",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:app-masters-academy/github-score.git",
+  "author": "HallexCosta <hallex.costa@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "@octokit/rest": "^18.9.1",
+    "express": "^4.17.1"
+  }
+}
